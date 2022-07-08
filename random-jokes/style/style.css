@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eedada;
+  font-family: "Ubuntu", Verdana, sans-serif;
+}
+
+header {
+  text-align: right;
+  height: 40px;
+}
+
+header ul {
+  padding-top: 10px;
+  margin-right: 2%;
+}
+
+header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 5px 0 5px;
+}
+
+header li .lang-butt {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Ubuntu", Verdana, sans-serif;
+  font-size: 24px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+header li .lang-butt.active-lang {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+main .container {
+  text-align: center;
+  min-height: calc(100vh - 100px);
+  padding-top: 5%;
+  margin: 0 2% 0 2%;
+  overflow: hidden;
+}
+
+.main-img {
+  background-image: url("../assets/img/1.png");
+  height: 40vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: spin-img-1 ease-in-out;
+  animation-duration: 0.3s;
+  animation-direction: normal;
+}
+
+@keyframes spin-img-1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-img.spin {
+  animation: spin-img-2 ease-in-out;
+  animation-duration: 0.3s;
+  animation-direction: normal;
+}
+
+@keyframes spin-img-2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.switch-joke {
+  margin-top: 40px;
+  background: #c2b2b2;
+  border: solid 2px #857777;
+  border-radius: 20px;
+  width: 270px;
+  height: 45px;
+  cursor: pointer;
+  font-family: "Ubuntu", Verdana, sans-serif;
+  font-size: 24px;
+  transition: 0.2s;
+}
+
+.switch-joke:active {
+  transform: scale(0.95);
+}
+
+.quote {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+main p span {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+footer {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div {
+  margin: 0 2% 0 2%;
+  font-size: 20px;
+}
+
+footer span a {
+  text-decoration: none;
+  color: #000000;
+  transition-duration: 0.5s;
+}
+
+footer span a:hover {
+  color: #463090;
+}
+
+.school-logo {
+  height: 40px;
+}
